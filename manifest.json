@@ -1,0 +1,30 @@
+{
+
+  "manifest_version": 2,
+  "name": "Scratch Messages",
+  "version": "1.0",
+
+  "description": "Check your Scratch messages with this extension!",
+
+  "permissions": ["https://api.scratch.mit.edu/"],
+
+  "background": {
+    "scripts": ["message_checker.js"],
+    "persistent": true
+  },
+  
+  "browser_action": {
+    "default_icon": {
+      "66": "Icon.png"
+    }
+  },
+
+  "icons": {
+    "66": "Icon.png"
+  },
+
+  "options_ui": {
+    "open_in_tab": true,
+    "page": "dashboard.html"
+  }
+}
